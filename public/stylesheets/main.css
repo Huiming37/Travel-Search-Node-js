@@ -1,0 +1,25 @@
+.thumbnail img{
+    width: 100%;
+}
+
+.thumbnail{
+    padding: 0;
+}
+
+.thumbnail .caption-full{
+    padding: 9px;
+}
+
+.delete-form {
+    display: inline-block;
+}
+
+
+.navbar {
+    height: 52px;
+    border-bottom:0.1px solid #e3e6ea;
+}
+
+#header_firstPart{
+    margin-bottom: 7%;
+}

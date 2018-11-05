@@ -1,0 +1,204 @@
+
+
+
+#test{
+	color: #00B7FF;
+	background-color: #fcdf07;
+}
+
+.jumbotron{
+	margin:auto;
+	padding-top: 20px;
+	background-color: #f4f7fa;
+}
+
+.title{
+	text-align: center;
+	font-size: 20px;
+}
+
+.form-horizontal .control-label{
+	text-align: left;
+}
+
+#startLocInput{
+	float: right;
+}
+
+#otherPlaceRadio{
+	width: 30px;
+}
+
+
+#detailsBtn{
+	float: right;
+}
+
+
+.nav-pills > li {
+    float:none;
+    display:inline-block;
+}
+
+.nav-pills {
+    text-align:center;
+}
+
+
+hr{
+	border:1px solid #d9dce2;
+	margin-bottom: 0px;
+}
+
+.table>tbody>tr>td{
+	vertical-align: middle;
+}
+
+
+.nav-tabs>li {
+	float: right;
+}
+
+.thumbnail{
+	/*padding:3px;*/
+	float: left;
+	display: inline;
+}
+
+@media(min-width: 768px){
+    .card-columns {
+            column-count: 4;
+        }
+    }
+
+#map {
+    height: 400px;
+    width: 100%;
+   }
+
+
+#changeView {
+
+	padding-top:.1rem; 
+	padding-bottom: .2rem;
+	padding-right:.2rem;
+	padding-left:.2rem;
+}
+
+.userProfilePhoto{
+	margin-left: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+#Order_btn{
+	margin-left: 1rem;
+}
+
+.clientReviews .card{
+	margin-bottom: 1rem;
+}
+
+.clientYelpReviews .card{
+	margin-bottom: 1rem;
+}
+
+#pageChange{
+	text-align: center;
+}
+
+
+#favPageChange{
+	text-align: center;
+}
+
+
+h3{
+	text-align: center;
+}
+
+
+.locationsTable{
+	position: relative;
+  	left: 0;
+}
+
+.detailsTable{
+	position: relative;
+  	left: 0;
+}
+
+
+@keyframes ChangeFirst {
+    from {
+        left: 100%;
+    } to {
+        left: 0;
+    }
+}
+
+@keyframes ChangeSecond {
+    from {
+        left: -100%;
+    } to {
+        left: 0;
+    }
+}
+
+@keyframes ChangeThird {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+
+.locationsTable.ng-hide-remove{
+    animation: 0.5s ChangeFirst;
+}
+
+.detailsTable.ng-hide-remove{
+    animation: 0.5s ChangeSecond;
+}
+
+
+.clientReviews.ng-hide-remove{
+    animation: 0.5s ChangeThird;
+}
+
+.clientYelpReviews.ng-hide-remove{
+    animation: 0.5s ChangeThird;
+}
+
+
+
+.form-control.ng-touched.ng-invalid{
+	border-color: red; 
+}
+
+
+.form-control.ng-touched.ng-invalid:focus{
+	border-color: red; 
+}
+
+.highlighting{
+	background-color: #fcdf07;
+}
+
+.info_rating{
+	overflow: hidden;
+	text-wrap: none;
+}
+
+
+.navbar {
+	height: 52px;
+	border-bottom:0.1px solid #e3e6ea;
+}
+
+
+
+
+
+
+

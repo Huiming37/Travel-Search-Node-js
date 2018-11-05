@@ -1,0 +1,45 @@
+
+
+a {
+    color: white;
+}
+
+
+header {
+    height: 20%;
+}
+
+.jumbotron {
+    background: url("http://www-scf.usc.edu/~hdou/index_background2.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0;
+    height: 20%;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron div {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: rgba(77, 255, 77, 0.4)
+}
+
+
+.jumbotron  {
+    padding: 4rem 0rem;
+}
+
+
+
+
+.navbar {
+    position: relative;
+    height: 52px;
+    margin-bottom: 0px;
+    border-bottom:0.1px solid #e3e6ea;
+    border: 1px solid transparent;
+}
+
