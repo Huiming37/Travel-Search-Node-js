@@ -1,7 +1,11 @@
-const express = require('express');
-const router = express.Router();
+
+var express = require('express');
+var router = express.Router();
+var passport = require("passport");
+var User = require("../Models/user.js");
+var request = require('request');
+const bodyParser = require("body-parser");
 const url = require('url');
-const request = require('request');
 
 const googleApiKey = '&key=AIzaSyCNaOJj0OTnVeLBVjPMfGeb-KgBPsT13HA';
 
@@ -29,9 +33,6 @@ router.get('/getYelpReviews', function (req, res) {
         } else {
 
             let locationsRes = JSON.parse(data);
-
-            console.log(locationsRes);
-
             if(locationsRes.businesses.length== 0){
                 res.end(JSON.stringify(locationsRes));
             }else{
@@ -145,11 +146,16 @@ router.get('/getLatLng', function (req, res) {
 
 
 router.post("/renewFavourites", function (req, res) {
+
+    console.log("update here");
+
     User.findById(req.user._id, (err, user) => {
+        console.log(req.user._id);
         if (err) {
             console.log(err);
         }
         else {
+            console.log(req.body);
             user.favourites = req.body;
             user.save();
         }
@@ -158,11 +164,10 @@ router.post("/renewFavourites", function (req, res) {
 
 
 router.get("/getFavourites", function (req, res) {
-
     var favourites = JSON.stringify(req.user.favourites);
-    console.log(favourites);
     res.end(favourites);
-
 });
+
+
 
 module.exports = router;
