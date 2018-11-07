@@ -12,7 +12,9 @@ router.get('/getYelpReviews', function (req, res) {
     let params = url.parse(req.url, true).query;
 
     let path = 'https://api.yelp.com' + '/v3/businesses/matches/best?name=' + encodeURI(params.name)
-        +'&address1='+encodeURI(params.address1)+ '&city=' + encodeURI(params.city)+'&state=' + params.state + '&country=' + params.country;
+        + '&city=' + encodeURI(params.city)+'&state=' + params.state + '&country=' + params.country +'&address1='+encodeURI(params.address1);
+
+    console.log(path);
 
     let options= {
         url: path,
@@ -27,6 +29,8 @@ router.get('/getYelpReviews', function (req, res) {
         } else {
 
             let locationsRes = JSON.parse(data);
+
+            console.log(locationsRes);
 
             if(locationsRes.businesses.length== 0){
                 res.end(JSON.stringify(locationsRes));

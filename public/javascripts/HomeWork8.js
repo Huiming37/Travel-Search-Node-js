@@ -9,9 +9,7 @@ var app = angular.module("myApp",['ngAnimate']);
 
 function Controller($scope,$http){
 
-
-    // $scope.backendUrl = "https://enigmatic-mountain-79394.herokuapp.com";
-    $scope.backendUrl = "http://localhost:3000/detail";
+    $scope.backendUrl = '/detail';
 
     $scope.keyword="";
     $scope.type="default";
@@ -265,11 +263,10 @@ function Controller($scope,$http){
                 marker.setVisible(false);
 
             }else{
-                console.log($scope.startPoint);
 
                 $http({
                     method:"GET",
-                    url: $scope.backendUrl,
+                    url: $scope.backendUrl + "/getLatLng",
                     params:{location:$scope.startPoint}
 
                 }).then(function successCallback(response){
@@ -635,7 +632,7 @@ function Controller($scope,$http){
 
         if(!$scope.favourites.hasOwnProperty(place_id)){
             $scope.favourites[place_id] = JSON.stringify($scope.locations[index]);
-            $http.post('/renewFavourites', $scope.favourites);
+            $http.post('/detail/renewFavourites', $scope.favourites);
             $scope.favs.push($scope.locations[index]);
         }
 
@@ -652,7 +649,7 @@ function Controller($scope,$http){
             for(var i = 0; i < $scope.locations.length; i++){
                 if($scope.locations[i].place_id = place_id){
                     $scope.favourites[place_id] = JSON.stringify($scope.locations[i]);
-                    $http.post('/renewFavourites', $scope.favourites);
+                    $http.post('/detail/renewFavourites', $scope.favourites);
                     $scope.favs.push($scope.locations[i]);
                     break;
                 }
@@ -666,7 +663,8 @@ function Controller($scope,$http){
     $scope.removeFav = function(place_id,index){
 
         delete $scope.favourites[place_id];
-        $http.post('/renewFavourites', $scope.favourites);
+
+        $http.post('/detail/renewFavourites', $scope.favourites);
 
         $scope.favs.splice(($scope.curFavPage - 1) * 20 + index, 1);
 
