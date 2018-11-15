@@ -6,3 +6,6 @@
 deployed them on AWS. 
    - Create an Android App with the same functionalities by using Android SDK, which also use some third-party
 libraries such as Volley, Picasso, and AutoCompleteTextView. 
+
+
+   The project demo could be found here: https://nameless-atoll-59996.herokuapp.com/
