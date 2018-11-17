@@ -7,6 +7,39 @@ deployed them on Heroku.
 
    The project demo could be found here: https://nameless-atoll-59996.herokuapp.com/
    
+**Index Page:**
+
+![alt text](https://github.com/Huiming37/Travel-Search-Node-js/blob/master/public/images/ScreenShot/Index.png)
+
+**Search From:**
+
+![alt text](https://github.com/Huiming37/Travel-Search-Node-js/blob/master/public/images/ScreenShot/SearchForm.png)
+
+**SignUp From:**
+
+![alt text](https://github.com/Huiming37/Travel-Search-Node-js/blob/master/public/images/ScreenShot/SignUp.png)
+
+**Login From:**
+
+![alt text](https://github.com/Huiming37/Travel-Search-Node-js/blob/master/public/images/ScreenShot/Login.png)
+
+**Place Detail:**
+
+![alt text](https://github.com/Huiming37/Travel-Search-Node-js/blob/master/public/images/ScreenShot/Details.png)
+
+**Place Photo:**
+
+![alt text](https://github.com/Huiming37/Travel-Search-Node-js/blob/master/public/images/ScreenShot/Photos.png)
+
+**Place Route:**
+
+![alt text](https://github.com/Huiming37/Travel-Search-Node-js/blob/master/public/images/ScreenShot/Routes.png)
+
+**Place Review:**
+
+![alt text](https://github.com/Huiming37/Travel-Search-Node-js/blob/master/public/images/ScreenShot/Reviews.png)
+
+   
 
 
    
