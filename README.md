@@ -11,15 +11,15 @@ deployed them on Heroku.
 
 ![alt text](https://github.com/Huiming37/Travel-Search-Node-js/blob/master/public/images/ScreenShot/Index.png)
 
-**Search From:**
+**Search Form:**
 
 ![alt text](https://github.com/Huiming37/Travel-Search-Node-js/blob/master/public/images/ScreenShot/SearchForm.png)
 
-**SignUp From:**
+**SignUp Form:**
 
 ![alt text](https://github.com/Huiming37/Travel-Search-Node-js/blob/master/public/images/ScreenShot/SignUp.png)
 
-**Login From:**
+**Login Form:**
 
 ![alt text](https://github.com/Huiming37/Travel-Search-Node-js/blob/master/public/images/ScreenShot/Login.png)
 
